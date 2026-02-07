@@ -100,62 +100,26 @@ h2 {
     font-size: 1rem;
 }
 
-.contact-form {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.form-group {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
-
-.form-group label {
-    font-size: 0.875rem;
-    font-weight: 500;
-    color: var(--text-secondary);
-}
-
-.form-group input,
-.form-group textarea {
-    padding: 14px 16px;
-    background-color: var(--bg-card);
-    border: 1px solid var(--border);
-    border-radius: 8px;
-    color: var(--text-primary);
-    font-family: inherit;
-    font-size: 1rem;
-    transition: border-color 0.2s ease;
-}
-
-.form-group input:focus,
-.form-group textarea:focus {
-    outline: none;
-    border-color: var(--accent);
-}
-
-.form-group textarea {
-    resize: vertical;
-    min-height: 120px;
-}
-
-.submit-btn {
-    padding: 16px 32px;
+.contact-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px 24px;
     background-color: var(--accent);
-    color: white;
-    border: none;
     border-radius: 8px;
-    font-family: inherit;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
     font-size: 1rem;
-    font-weight: 600;
-    cursor: pointer;
     transition: background-color 0.2s ease;
 }
 
-.submit-btn:hover {
+.contact-btn:hover {
     background-color: var(--accent-hover);
+}
+
+.contact-btn svg {
+    opacity: 0.9;
 }
 
 .social-links {
