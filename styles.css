@@ -100,6 +100,10 @@ h2 {
     font-size: 1rem;
 }
 
+.contact {
+    text-align: center;
+}
+
 .contact-btn {
     display: inline-flex;
     align-items: center;
@@ -122,8 +126,13 @@ h2 {
     opacity: 0.9;
 }
 
+.social {
+    text-align: center;
+}
+
 .social-links {
     display: flex;
+    justify-content: center;
     gap: 16px;
 }
 
