@@ -6,13 +6,13 @@
 
 :root {
     --bg-primary: #0a0a0a;
-    --bg-secondary: #141414;
-    --bg-card: #1a1a1a;
+    --bg-secondary: rgba(20, 20, 20, 0.9);
+    --bg-card: rgba(26, 26, 26, 0.85);
     --text-primary: #ffffff;
     --text-secondary: #a0a0a0;
     --accent: #6366f1;
     --accent-hover: #818cf8;
-    --border: #2a2a2a;
+    --border: rgba(42, 42, 42, 0.8);
 }
 
 body {
@@ -23,7 +23,17 @@ body {
     min-height: 100vh;
 }
 
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
 .container {
+    position: relative;
     max-width: 700px;
     margin: 0 auto;
     padding: 60px 24px;
@@ -78,6 +88,7 @@ h2 {
     gap: 16px;
     padding: 20px 24px;
     background-color: var(--bg-card);
+    backdrop-filter: blur(10px);
     border: 1px solid var(--border);
     border-radius: 12px;
     text-decoration: none;
@@ -142,6 +153,7 @@ h2 {
     gap: 10px;
     padding: 14px 20px;
     background-color: var(--bg-card);
+    backdrop-filter: blur(10px);
     border: 1px solid var(--border);
     border-radius: 8px;
     text-decoration: none;
