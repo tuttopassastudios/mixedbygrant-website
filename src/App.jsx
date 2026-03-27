@@ -1,14 +1,12 @@
-import Header from './components/Header'
-import About from './components/About'
-import Portfolio from './components/Portfolio'
-import Contact from './components/Contact'
-import Social from './components/Social'
-import Footer from './components/Footer'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import FaultyTerminal from './components/FaultyTerminal'
+import LandingPage from './pages/LandingPage'
+import AboutPage from './pages/AboutPage'
+import ContactPage from './pages/ContactPage'
 
 function App() {
   return (
-    <>
+    <BrowserRouter>
       <div className="background">
         <FaultyTerminal
           scale={1.5}
@@ -30,15 +28,12 @@ function App() {
           brightness={0.4}
         />
       </div>
-      <div className="container">
-        <Header />
-        <About />
-        <Portfolio />
-        <Contact />
-        <Social />
-        <Footer />
-      </div>
-    </>
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/contact" element={<ContactPage />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 
